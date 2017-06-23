@@ -26,3 +26,4 @@ In ISOBMFF, a continuous or timed media or metadata stream forms a track, wherea
 A file may contain both image items and image sequence tracks along with other media. For example, it is possible to create a file that includes image items or image sequence tracks conforming to HEIF, along with video, audio and timed text tracks conforming to any derivative format of the ISOBMFF.
 
 Files conforming to ISOBMFF consist of a sequence of data structures called boxes, each containing a four-character code (4CC) indicating the type of the box, the size of the box in terms of bytes, and the payload of the box. Boxes may be nested, i.e. a box may contain other boxes. ISOBMFF and HEIF specify constraints on the allowed box order and hierarchy.
+
