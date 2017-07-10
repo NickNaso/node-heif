@@ -27,3 +27,5 @@ A file may contain both image items and image sequence tracks along with other m
 
 Files conforming to ISOBMFF consist of a sequence of data structures called boxes, each containing a four-character code (4CC) indicating the type of the box, the size of the box in terms of bytes, and the payload of the box. Boxes may be nested, i.e. a box may contain other boxes. ISOBMFF and HEIF specify constraints on the allowed box order and hierarchy.
 
+## Brands and MIME type definitions
+
