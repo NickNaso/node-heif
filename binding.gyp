@@ -4,10 +4,10 @@
     },
     'targets': [
         {
-            'target_name': 'heif',
-            'dependencies': [
-                'src/deps/heif/heiflib.gyp:'
-            ],
+            'target_name': 'Heif',
+            #'dependencies': [
+            #    'src/deps/heif/heiflib.gyp:'
+            #],
             'cflags': [
                 
             ],
@@ -18,8 +18,7 @@
                 "<!(node -e \"require('nan')\")"
             ],
             'sources': [
-                'src/heif_reader.cc',
-                'src/heif_writer.cc'
+                'src/heif.cc'
             ],
             'link_settings': {
                 'ldflags': [
