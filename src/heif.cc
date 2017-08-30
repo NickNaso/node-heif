@@ -18,30 +18,18 @@
  ******************************************************************************/
 
 #include <nan.h>
-
-
-
-
-
-
-
-
+#include "buildinfo.h"
 
 //////////////////////////// INIT & CONFIG MODULE //////////////////////////////
 
 NAN_MODULE_INIT(Init)
 {
-    /*Nan::Set(target, Nan::New("version").ToLocalChecked(),
-                 Nan::New<FunctionTemplate>(Version)->GetFunction());*/
 
-    /*Nan::Set(target, Nan::New("execute").ToLocalChecked(),
-                 Nan::New<FunctionTemplate>(Execute)->GetFunction());*/
-
-    /*Nan::Set(target, Nan::New("executeSync").ToLocalChecked(),
-                 Nan::New<FunctionTemplate>(ExecuteSync)->GetFunction());*/
-    Nan::Set(target, 
-        Nan::New("version").ToLocalChecked(), 
-        Nan::New("1.0.0").ToLocalChecked());             
+    Nan::Set(target, Nan::New("VERSION").ToLocalChecked(), Nan::New(Heif::VERSION).ToLocalChecked());  
+    Nan::Set(target, Nan::New("MAJOR").ToLocalChecked(), Nan::New(Heif::MAJOR)); 
+    Nan::Set(target, Nan::New("MINOR").ToLocalChecked(), Nan::New(Heif::MINOR)); 
+    Nan::Set(target, Nan::New("PATCH").ToLocalChecked(), Nan::New(Heif::PATCH));
+    Nan::Set(target, Nan::New("CODE_NAME").ToLocalChecked(), Nan::New(Heif::CODE_NAME).ToLocalChecked());             
 }
 
 NODE_MODULE(Heif, Init)

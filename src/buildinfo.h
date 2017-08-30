@@ -16,7 +16,12 @@
  * Nicola Del Gobbo <nicoladelgobbo@gmail.com>
  * Mauro Doganieri <mauro.doganieri@gmail.com>
  ******************************************************************************/
-
-const Heif = require('bindings')('Heif')
-
-module.exports = Heif
+ 
+namespace Heif
+{ 
+    constexpr auto VERSION = "2.0.0";
+    constexpr auto MAJOR = 2;
+    constexpr auto MINOR = 0;
+    constexpr auto PATCH = 0;
+    constexpr auto CODE_NAME = "ADRIATIC SEA"; 
+}

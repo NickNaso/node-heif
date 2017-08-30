@@ -16,3 +16,32 @@
  * Nicola Del Gobbo <nicoladelgobbo@gmail.com>
  * Mauro Doganieri <mauro.doganieri@gmail.com>
  ******************************************************************************/
+
+const Heif =  require('../')
+
+describe('Test heif', function () {
+    
+        it('Should return the version of Heif', function () {
+            expect(Heif.VERSION).not.toBe(null)
+            expect(Heif.VERSION).toContain("2.0.0")
+        })
+
+        it('Should return the major version of Heif', function () {
+            expect(Heif.MAJOR).not.toBe(null)
+        })
+
+        it('Should return the minor version of Heif', function () {
+            expect(Heif.MINOR).not.toBe(null)
+        })
+
+        it('Should return the patch version of Heif', function () {
+            expect(Heif.PATCH).not.toBe(null)
+        })
+
+
+        it('Should return the version of Heif', function () {
+            expect(Heif.CODE_NAME).not.toBe(null)
+            expect(Heif.CODE_NAME).toContain("ADRIATIC SEA")
+        })
+ 
+})
