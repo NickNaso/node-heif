@@ -1,7 +1,7 @@
 {
   "name": "heif",
   "description": "Node.js native addons for HEIF",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "contributors": [
     {
       "name": "Nicola Del Gobbo",
@@ -30,7 +30,7 @@
     "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=__tests__/jasmine.json"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "gypfile": true,
   "repository": {
